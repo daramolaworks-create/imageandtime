@@ -1740,3 +1740,161 @@ a {
     transform: none;
   }
 }
+
+/* Blog grid */
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.blog-card {
+  display: block;
+  padding: 0;
+  border-top: 1.5px solid var(--ink);
+  padding-top: 1.5rem;
+  text-decoration: none;
+  color: var(--ink);
+  transition: opacity 180ms ease;
+}
+
+.blog-card:hover {
+  opacity: 0.72;
+}
+
+.blog-card img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  margin-bottom: 1.25rem;
+}
+
+.blog-card .eyebrow {
+  margin-bottom: 0.75rem;
+}
+
+.blog-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.blog-card p {
+  opacity: 0.72;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.blog-date {
+  font-size: 0.8rem;
+  opacity: 0.5;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+/* Article body */
+.article-body {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.article-body .lead {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.article-body p {
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  opacity: 0.85;
+}
+
+.article-body h2 {
+  font-size: 1.5rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 600px) {
+  .blog-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Problem / Insight / Idea grid */
+.pii-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.pii-card {
+  padding: 0;
+  border-top: 1.5px solid var(--ink);
+  padding-top: 1.5rem;
+}
+
+.pii-card .eyebrow {
+  margin-bottom: 0.75rem;
+}
+
+.pii-card h3 {
+  font-size: 1.15rem;
+  margin-bottom: 0.75rem;
+}
+
+.pii-card p:last-child {
+  opacity: 0.75;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Related work / Connected experiences */
+.related-work-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.related-work-card {
+  display: block;
+  text-decoration: none;
+  color: var(--ink);
+  overflow: hidden;
+  transition: opacity 180ms ease;
+}
+
+.related-work-card:hover {
+  opacity: 0.72;
+}
+
+.related-work-card img {
+  width: 100%;
+  aspect-ratio: 16/10;
+  object-fit: cover;
+}
+
+.related-work-card div {
+  padding: 1rem 0;
+}
+
+.related-work-card h3 {
+  font-size: 1rem;
+  margin-bottom: 0.35rem;
+}
+
+.related-work-card p {
+  font-size: 0.85rem;
+  opacity: 0.6;
+}
+
+@media (max-width: 768px) {
+  .pii-grid {
+    grid-template-columns: 1fr;
+  }
+  .related-work-grid {
+    grid-template-columns: 1fr;
+  }
+}

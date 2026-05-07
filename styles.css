@@ -952,9 +952,22 @@ a {
 }
 
 .logo-cloud div:hover {
-  background: var(--ink);
-  color: var(--white);
+  background: var(--white);
   transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.10);
+}
+
+.logo-cloud div img {
+  max-width: 100%;
+  max-height: 56px;
+  width: auto;
+  object-fit: contain;
+  filter: grayscale(1) opacity(0.65);
+  transition: filter 240ms ease;
+}
+
+.logo-cloud div:hover img {
+  filter: grayscale(0) opacity(1);
 }
 
 .dark .logo-cloud div {
@@ -1168,6 +1181,12 @@ a {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.footer-bottom-logo {
+  width: 110px;
+  opacity: 0.72;
+  display: block;
 }
 
 .footer-bottom {

@@ -217,7 +217,7 @@ a {
   background:
     radial-gradient(circle at var(--mx, 50%) var(--my, 50%), rgba(201, 42, 47, 0.38), transparent 18rem),
     linear-gradient(90deg, rgba(17, 17, 17, 0.78), rgba(17, 17, 17, 0.28)),
-    var(--hero-image, url("https://www.imageandtime.com/images/hero-bg.jpg")) center / cover;
+    var(--hero-image, url("public/project%20photos/nestle.jpeg")) center / cover;
   color: var(--white);
   cursor: none;
 }
@@ -1248,7 +1248,7 @@ a {
     background:
       radial-gradient(circle at var(--mx, 50%) var(--my, 50%), rgba(201, 42, 47, 0.38), transparent 18rem),
       linear-gradient(90deg, rgba(17, 17, 17, 0.78), rgba(17, 17, 17, 0.28)),
-      var(--hero-image, url("https://www.imageandtime.com/images/hero-bg.jpg")) center / cover;
+      var(--hero-image, url("public/project%20photos/nestle.jpeg")) center / cover;
   }
 
   .hero-card-one {

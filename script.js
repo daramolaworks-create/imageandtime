@@ -133,10 +133,9 @@ if (hero && window.matchMedia("(pointer: fine)").matches) {
 
 if (hero) {
   const heroImages = [
-    'url("https://www.imageandtime.com/images/hero-bg.jpg")',
-    'url("https://www.imageandtime.com/maggi/img1.jpg")',
-    'url("https://www.imageandtime.com/union/thumbnail.png")',
-    'url("https://www.imageandtime.com/sickle-cell/thumbnail.png")'
+    'url("public/project%20photos/nestle.jpeg")',
+    'url("public/project%20photos/lacasera.jpeg")',
+    'url("public/project%20photos/union%20bank.jpeg")'
   ];
   let heroIndex = 0;
 

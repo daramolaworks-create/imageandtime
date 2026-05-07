@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Image & Time | Creativity is everywhere</title>
+    <meta name="description" content="A multi-page redesign prototype for Image & Time, the Lagos creative agency.">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="Main navigation">
+        <a class="brand" href="index.html" aria-label="Image & Time home"><img src="public/logo.svg" alt="Image & Time"></a>
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false">Menu</button>
+        <div class="nav-links" data-nav-links>
+          <a aria-current="page" href="index.html">Home</a>
+          <a href="work.html">Work</a>
+          <a href="studio.html">Studio</a>
+          <a href="expertise.html">Expertise</a>
+          <a href="thoughts.html">Thoughts</a>
+          <a class="nav-cta" href="contact.html">Start a project</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" data-hero>
+        <canvas class="hero-canvas" data-hero-canvas aria-hidden="true"></canvas>
+        <div class="cursor-orb" data-cursor-orb aria-hidden="true"></div>
+        <div class="hero-noise" aria-hidden="true"></div>
+        <div class="hero-ribbons" aria-hidden="true">
+          <div class="hero-ribbon hero-ribbon-one">
+            <span>Strategy</span><span>Identity</span><span>Campaigns</span><span>Culture</span><span>Film</span><span>Digital</span>
+          </div>
+          <div class="hero-ribbon hero-ribbon-two">
+            <span>Make it felt</span><span>Make it useful</span><span>Make it famous</span><span>Make it move</span>
+          </div>
+        </div>
+        <div class="hero-collage" aria-hidden="true">
+          <img class="hero-card hero-card-one" data-float-card src="https://www.imageandtime.com/maggi/img1.jpg" alt="">
+          <img class="hero-card hero-card-two" data-float-card src="https://www.imageandtime.com/union/thumbnail.png" alt="">
+          <img class="hero-card hero-card-three" data-float-card src="https://www.imageandtime.com/sickle-cell/thumbnail.png" alt="">
+        </div>
+        <div class="hero-inner">
+          <p class="eyebrow"><span data-scramble="Creative agency / Lagos, Nigeria">Creative agency / Lagos, Nigeria</span></p>
+          <h1 aria-label="Ideas that people feel.">
+            <span class="hero-word">Ideas</span>
+            <span class="hero-word">people</span>
+            <span class="hero-word">feel.</span>
+          </h1>
+          <div class="hero-kicker">
+            <p>We help ambitious brands craft remarkable identities, effective advertising and memorable experiences that move people.</p>
+            <div class="hero-tags" aria-label="Core services">
+              <span class="pill magnetic">Branding</span>
+              <span class="pill magnetic">Campaigns</span>
+              <span class="pill magnetic">Strategy</span>
+              <span class="pill magnetic">Culture</span>
+            </div>
+          </div>
+        </div>
+        <a class="hero-scroll magnetic" href="#selected-work" aria-label="Scroll to selected work">Explore work</a>
+      </section>
+
+      <section class="band dark">
+        <div class="section-inner split">
+          <p class="eyebrow">The studio</p>
+          <div>
+            <p class="lead">Creativity is everywhere. We make it useful, memorable and impossible to ignore.</p>
+            <p class="copy">Image & Time is an advertising and creative agency built for brands that need sharper thinking, stronger craft and work that connects with real people.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="band" id="selected-work">
+        <div class="section-inner">
+          <div class="split">
+            <p class="eyebrow">Selected work</p>
+            <p class="lead">Campaigns with a point of view.</p>
+          </div>
+          <div class="work-grid">
+            <a class="work-item" href="work.html#uncle-thomas">
+              <img src="https://www.imageandtime.com/images/hero-bg.jpg" alt="Campaign scene for Uncle Thomas">
+              <div class="work-meta"><span class="pill">Film</span><span class="pill">Campaign</span></div>
+              <div class="work-title">
+                <h3>Uncle Thomas</h3>
+                <p>Calling out the defeatist mindset through a character everyone recognises.</p>
+              </div>
+            </a>
+            <a class="work-item" href="work.html#real-men">
+              <img src="https://www.imageandtime.com/union/thumbnail.png" alt="Campaign visual for real men stories">
+              <div class="work-meta"><span class="pill">Brand</span><span class="pill">Culture</span></div>
+              <div class="work-title">
+                <h3>Your story makes you.</h3>
+                <p>A celebration of the journey real men take and the challenges they come through.</p>
+              </div>
+            </a>
+            <a class="work-item" href="work.html#maggi">
+              <img src="https://www.imageandtime.com/maggi/img1.jpg" alt="Food and lifestyle campaign visual">
+              <div class="work-meta"><span class="pill">Food</span><span class="pill">Activation</span></div>
+              <div class="work-title">
+                <h3>You have got the recipe.</h3>
+                <p>A platform about talent, individuality and the confidence to break barriers.</p>
+              </div>
+            </a>
+            <a class="work-item" href="work.html#purelife">
+              <img src="https://www.imageandtime.com/work/nestle-purelife.png" alt="Nestle Pure Life campaign visual">
+              <div class="work-meta"><span class="pill">Brand</span><span class="pill">Lifestyle</span></div>
+              <div class="work-title">
+                <h3>Nestle Pure Life</h3>
+                <p>Refreshing everyday moments with a clearer, more human brand presence.</p>
+              </div>
+            </a>
+            <a class="work-item" href="work.html#haier">
+              <img src="https://www.imageandtime.com/haier-thermocool/thumbnail.png" alt="Haier Thermocool campaign visual">
+              <div class="work-meta"><span class="pill">Product</span><span class="pill">Retail</span></div>
+              <div class="work-title">
+                <h3>Haier Thermocool</h3>
+                <p>Product storytelling shaped around reliability, everyday homes and modern Nigerian life.</p>
+              </div>
+            </a>
+            <a class="work-item" href="work.html#lacasera">
+              <img src="https://www.imageandtime.com/work/lacasera.png" alt="La Casera campaign visual">
+              <div class="work-meta"><span class="pill">Campaign</span><span class="pill">Beverage</span></div>
+              <div class="work-title">
+                <h3>La Casera</h3>
+                <p>Bold refreshment cues built for visibility, appetite and cultural recall.</p>
+              </div>
+            </a>
+          </div>
+          <div class="section-action">
+            <a class="button" href="work.html">View more work</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="band studio-note">
+        <div class="section-inner">
+          <div class="statement-grid">
+            <p class="eyebrow">Brand partners</p>
+            <h2>We look for teams who want to dream bigger, move sharper and make work people actually remember.</h2>
+            <a class="button" href="contact.html">Start a conversation</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="band red">
+        <div class="section-inner">
+          <div class="split">
+            <p class="eyebrow">Expertise</p>
+            <p class="lead">Design, strategy, campaigns and experiences that make people look, think and act.</p>
+          </div>
+          <div class="service-list">
+            <a class="service-row" href="expertise.html#design"><span>01</span><strong>Design & Culture</strong><p>Identity systems, brand worlds and cultural positioning.</p><span class="arrow">-></span></a>
+            <a class="service-row" href="expertise.html#innovation"><span>02</span><strong>Innovation & Transformation</strong><p>New propositions, communication platforms and business change.</p><span class="arrow">-></span></a>
+            <a class="service-row" href="expertise.html#strategy"><span>03</span><strong>Strategy & Insight</strong><p>Research, category truth, audience behaviour and creative strategy.</p><span class="arrow">-></span></a>
+            <a class="service-row" href="expertise.html#campaigns"><span>04</span><strong>Advertising Campaigns</strong><p>Film, outdoor, social and integrated ideas with a clear behavioural job.</p><span class="arrow">-></span></a>
+            <a class="service-row" href="expertise.html#digital"><span>05</span><strong>Digital Experiences</strong><p>Web, social systems, content engines and digital brand touchpoints.</p><span class="arrow">-></span></a>
+            <a class="service-row" href="expertise.html#activation"><span>06</span><strong>Activation & Experience</strong><p>Launches, events and physical moments built to earn attention.</p><span class="arrow">-></span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="band approach-band">
+        <div class="section-inner">
+          <div class="split">
+            <p class="eyebrow">Our approach</p>
+            <p class="lead">Fresh eyes, open minds and enough discipline to turn hidden truths into work with impact.</p>
+          </div>
+          <div class="approach-grid">
+            <article class="approach-card"><span>01</span><h3>Discover</h3><p>We uncover the business tension, audience behaviour and category truth.</p></article>
+            <article class="approach-card"><span>02</span><h3>Strategise</h3><p>We shape a clear platform that gives every creative decision a job.</p></article>
+            <article class="approach-card"><span>03</span><h3>Create</h3><p>We develop identities, campaign ideas and experiences with distinctive craft.</p></article>
+            <article class="approach-card"><span>04</span><h3>Launch</h3><p>We help the work meet the market with momentum, clarity and flexibility.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="band">
+        <div class="section-inner">
+          <div class="split">
+            <p class="eyebrow">Brand partners</p>
+            <p class="lead">Built with brands people already know and brands they are about to remember.</p>
+          </div>
+          <div class="logo-cloud" aria-label="Selected clients">
+            <div>Nestle</div><div>Seplat</div><div>Ribena</div><div>Union Bank</div><div>NNPC</div>
+            <div>Tecno</div><div>Xiaomi</div><div>Lucozade</div><div>Coca-Cola</div><div>Lafarge</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="band thoughts-preview">
+        <div class="section-inner">
+          <div class="split">
+            <p class="eyebrow">Latest thoughts</p>
+            <p class="lead">Notes from the studio on brands, culture and the creative work between them.</p>
+          </div>
+          <div class="thought-cards">
+            <a class="thought-card" href="thoughts.html"><span>Session</span><h3>Book review</h3><p>Studio reading conversations that turn good pages into better practice.</p></a>
+            <a class="thought-card" href="thoughts.html"><span>Learning</span><h3>Creative lab</h3><p>Practical sessions for people building brands, campaigns and teams.</p></a>
+            <a class="thought-card" href="thoughts.html"><span>Note</span><h3>Creativity is everywhere</h3><p>Why the best ideas often begin outside the usual places agencies look.</p></a>
+          </div>
+          <div class="section-action">
+            <a class="button" href="thoughts.html">Read more</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="band dark">
+        <div class="marquee" aria-hidden="true">
+          <span>Ready for something new? Get in touch. Ready for something new? Get in touch. </span>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="section-inner">
+        
+        <div class="footer-grid">
+          <h2>Have an idea or project? Let's talk.</h2>
+          <div><strong>General</strong><p><a href="mailto:info@imageandtime.com">info@imageandtime.com</a></p></div>
+          <div><strong>Visit</strong><p>2 Reverend Ogunbiyi Street<br>Ikeja GRA, Lagos, Nigeria</p></div>
+          <div><strong>Follow</strong><ul><li><a href="https://www.instagram.com/imageandtime/">Instagram</a></li><li><a href="https://www.linkedin.com/company/image-&-time/">LinkedIn</a></li></ul></div>
+        </div>
+        <div class="footer-bottom"><span>© <span data-year></span> Image & Time</span><span>Creativity is everywhere</span></div>
+      </div>
+    </footer>
+  </body>
+</html>

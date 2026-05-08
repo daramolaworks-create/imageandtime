@@ -57,7 +57,7 @@ if (window.matchMedia("(pointer: fine)").matches) {
     cursor.classList.add("is-visible");
   });
 
-  document.querySelectorAll("a, button, input, textarea, select, .work-item, .service-row, .thought-row, .logo-cloud div").forEach((node) => {
+  document.querySelectorAll("a, button, input, textarea, select, .work-item, .service-row, .thought-row, .blog-card, .related-work-card, .pii-card, .logo-cloud div").forEach((node) => {
     node.addEventListener("pointerenter", () => cursor.classList.add("is-hovering"));
     node.addEventListener("pointerleave", () => cursor.classList.remove("is-hovering"));
   });

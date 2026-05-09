@@ -1859,6 +1859,107 @@ a {
   background: #f7f3ee;
 }
 
+.case-proof {
+  background: var(--white);
+  color: var(--ink);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.case-proof .split {
+  grid-template-columns: 0.55fr 1.45fr;
+  align-items: end;
+}
+
+.case-proof .lead {
+  max-width: 980px;
+  color: var(--ink);
+  font-size: clamp(2.2rem, 4.1vw, 4.8rem);
+}
+
+.case-proof-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(320px, 0.65fr);
+  gap: 18px;
+  margin-top: 46px;
+  align-items: stretch;
+}
+
+.case-film {
+  overflow: hidden;
+  background: var(--ink);
+  border: 1px solid var(--line);
+  line-height: 0;
+  min-height: clamp(560px, 45vw, 760px);
+}
+
+.case-film iframe,
+.case-film img {
+  display: block;
+  width: 100%;
+  border: 0;
+  object-fit: cover;
+}
+
+.case-film iframe {
+  height: 100%;
+  min-height: 0;
+}
+
+.case-film img {
+  height: 100%;
+}
+
+.case-film img {
+  filter: saturate(0.96) contrast(1.04);
+  transition: transform 700ms cubic-bezier(.16, 1, .3, 1), filter 220ms ease;
+}
+
+.case-film:hover img {
+  filter: saturate(1.08) contrast(1.06);
+  transform: scale(1.035);
+}
+
+.case-stats {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--line);
+}
+
+.case-stats article {
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: clamp(22px, 2.4vw, 34px);
+  background: #f7f3ee;
+}
+
+.case-stats span {
+  display: block;
+  color: var(--red);
+  font-size: 0.82rem;
+  text-transform: uppercase;
+}
+
+.case-stats strong {
+  display: block;
+  margin: 34px 0 14px;
+  font-family: var(--display);
+  font-size: clamp(2.35rem, 4.4vw, 5.2rem);
+  font-weight: 400;
+  line-height: 0.92;
+  overflow-wrap: anywhere;
+}
+
+.case-stats p {
+  max-width: 420px;
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
 .pii-card {
   min-height: 330px;
   display: flex;
@@ -2210,8 +2311,23 @@ a {
   .pii-grid,
   .related-work-grid,
   .blog-grid,
-  .session-grid {
+  .session-grid,
+  .case-proof-layout {
     grid-template-columns: 1fr;
+  }
+
+  .case-proof-layout {
+    align-items: start;
+  }
+
+  .case-film {
+    min-height: 0;
+  }
+
+  .case-film iframe,
+  .case-film img {
+    height: auto;
+    aspect-ratio: 16 / 9;
   }
 
   .pii-card,
@@ -2224,5 +2340,10 @@ a {
   .case-media img,
   .article-media img {
     aspect-ratio: 1.08 / 1;
+  }
+
+  .case-film iframe,
+  .case-film img {
+    min-height: 0;
   }
 }

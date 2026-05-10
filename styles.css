@@ -2316,6 +2316,14 @@ a {
     grid-template-columns: 1fr;
   }
 
+  .case-proof .split {
+    grid-template-columns: 1fr;
+  }
+
+  .case-proof .lead {
+    margin-top: 12px;
+  }
+
   .case-proof-layout {
     align-items: start;
   }
@@ -2330,20 +2338,82 @@ a {
     aspect-ratio: 16 / 9;
   }
 
+  .case-stats {
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+  }
+
+  .case-stats article {
+    padding: 24px;
+  }
+
+  .case-stats strong {
+    margin: 12px 0 8px;
+    font-size: clamp(2rem, 8vw, 3rem);
+  }
+
   .pii-card,
   .session-card {
-    min-height: 260px;
+    min-height: 220px;
+  }
+
+  .pii-card h3 {
+    font-size: clamp(1.3rem, 5vw, 1.8rem);
+  }
+
+  .related-work-card h3,
+  .blog-card h3 {
+    margin-top: 24px;
+    font-size: clamp(1.2rem, 4vw, 1.6rem);
+  }
+
+  .related-work-card div {
+    min-height: 120px;
+  }
+
+  .session-page .session-hero .section-inner {
+    display: block;
+  }
+
+  .session-grid {
+    grid-template-columns: 1fr;
   }
 }
 
 @media (max-width: 560px) {
   .case-media img,
   .article-media img {
-    aspect-ratio: 1.08 / 1;
+    aspect-ratio: 1.35 / 1;
+  }
+
+  .case-study .page-hero h1 {
+    font-size: clamp(2.4rem, 10vw, 3.5rem);
   }
 
   .case-film iframe,
   .case-film img {
     min-height: 0;
+    aspect-ratio: 16 / 9;
+  }
+
+  .blog-card > span,
+  .blog-card h3,
+  .blog-card p,
+  .blog-date {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  .blog-card h3 {
+    margin-top: 32px;
+  }
+
+  .article-body .lead {
+    font-size: clamp(1.2rem, 4.5vw, 1.6rem);
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
   }
 }

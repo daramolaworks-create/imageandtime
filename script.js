@@ -18,6 +18,8 @@ requestAnimationFrame(() => {
   });
 });
 
+const isMobile = window.matchMedia("(max-width: 900px)").matches;
+
 const revealObserver = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
@@ -27,7 +29,7 @@ const revealObserver = new IntersectionObserver(
       }
     });
   },
-  { threshold: 0.12 }
+  { threshold: isMobile ? 0.04 : 0.12, rootMargin: "0px 0px -40px 0px" }
 );
 
 document.querySelectorAll(".band, .page-hero, .site-footer").forEach((node) => {

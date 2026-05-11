@@ -135,9 +135,9 @@ if (hero && window.matchMedia("(pointer: fine)").matches) {
 
 if (hero) {
   const heroImages = [
-    'url("public/project%20photos/nestle.jpeg")',
-    'url("public/project%20photos/lacasera.jpeg")',
-    'url("public/project%20photos/union%20bank.jpeg")'
+    'url("public/hero%20images/herobg3.png")',
+    'url("public/hero%20images/_MG_9266%20(1).CR2")',
+    'url("public/hero%20images/hero-bg.jpg")'
   ];
   let heroIndex = 0;
 

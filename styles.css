@@ -1585,7 +1585,7 @@ a {
     background:
       radial-gradient(circle at var(--mx, 50%) var(--my, 50%), rgba(201, 42, 47, 0.38), transparent 18rem),
       linear-gradient(90deg, rgba(17, 17, 17, 0.78), rgba(17, 17, 17, 0.28)),
-      var(--hero-image, url("public/project%20photos/nestle.jpeg")) center / cover;
+      var(--hero-image, url("public/hero%20images/hero-bg.jpg")) center / cover;
   }
 
   .hero-card-one {

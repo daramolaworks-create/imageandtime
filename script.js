@@ -136,7 +136,7 @@ if (hero && window.matchMedia("(pointer: fine)").matches) {
 if (hero) {
   const heroImages = [
     'url("public/hero%20images/herobg3.png")',
-    'url("public/hero%20images/_MG_9266%20(1).CR2")',
+    'url("public/hero%20images/_MG_9266%20(1).jpg")',
     'url("public/hero%20images/hero-bg.jpg")'
   ];
   let heroIndex = 0;

@@ -135,9 +135,15 @@ if (hero && window.matchMedia("(pointer: fine)").matches) {
 
 if (hero) {
   const heroImages = [
-    'url("public/hero%20images/herobg3.png")',
+    'url("public/hero%20images/DSC02892.jpg")',
+    'url("public/hero%20images/NB4721.jpg")',
+    'url("public/hero%20images/Na%20Man%20You%20Be%20-%20OOH3B-%20(YB)%20-1a.jpg")',
     'url("public/hero%20images/_MG_9266%20(1).jpg")',
-    'url("public/hero%20images/hero-bg.jpg")'
+    'url("public/hero%20images/hero-bg.jpg")',
+    'url("public/hero%20images/herobg3.png")',
+    'url("public/hero%20images/nestle.png")',
+    'url("public/hero%20images/take_out_all_the_texts,_202605091519.jpeg")',
+    'url("public/hero%20images/unnamed%20(15).jpg")'
   ];
   let heroIndex = 0;
 

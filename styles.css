@@ -792,6 +792,14 @@ a {
   line-height: 1.5;
 }
 
+.dark .work-item {
+  color: var(--white);
+}
+
+.dark .work-title p {
+  color: rgba(255, 255, 255, 0.72);
+}
+
 .statement-grid {
   display: grid;
   grid-template-columns: 0.6fr 1.4fr auto;
@@ -1147,6 +1155,10 @@ a {
   transform: scale(1.035);
 }
 
+.person-crop-high img {
+  object-position: center 18%;
+}
+
 .person > div {
   min-height: 132px;
   display: flex;
@@ -1183,6 +1195,16 @@ a {
 
 .team-grid {
   grid-template-columns: repeat(3, 1fr);
+}
+
+.leadership-grid {
+  max-width: 980px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-inline: auto;
+}
+
+.leadership-grid .person img {
+  aspect-ratio: 4 / 4.6;
 }
 
 .contact-panel {
@@ -1958,6 +1980,44 @@ a {
   margin: 0;
   color: var(--muted);
   line-height: 1.5;
+}
+
+.work-samples {
+  background: #f7f3ee;
+}
+
+.sample-strip {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 18px;
+  margin-top: 42px;
+}
+
+.sample-strip img {
+  width: 100%;
+  height: 100%;
+  min-height: 280px;
+  display: block;
+  object-fit: cover;
+  background: var(--white);
+  border: 1px solid var(--line);
+}
+
+.sample-strip img:nth-child(1),
+.sample-strip img:nth-child(4) {
+  grid-column: span 7;
+  aspect-ratio: 1.55 / 1;
+}
+
+.sample-strip img:nth-child(2),
+.sample-strip img:nth-child(3) {
+  grid-column: span 5;
+  aspect-ratio: 1 / 1;
+}
+
+.sample-strip img:nth-child(n + 5) {
+  grid-column: span 4;
+  aspect-ratio: 1.2 / 1;
 }
 
 .pii-card {

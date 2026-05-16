@@ -45,14 +45,9 @@ body {
   font-family: var(--font-mono);
   font-size: 16px;
   line-height: 1.45;
+  overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   text-rendering: geometricPrecision;
-}
-
-body.is-loading main,
-body.is-loading footer {
-  opacity: 0;
-  transform: translateY(12px);
 }
 
 main,
@@ -113,6 +108,15 @@ img {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 2px solid var(--red);
+  outline-offset: 4px;
 }
 
 .site-header {
@@ -723,14 +727,8 @@ a {
   transition: transform 240ms ease;
 }
 
-.work-item:nth-child(3n) {
+.work-grid .work-item:last-child:nth-child(odd) {
   grid-column: span 12;
-}
-
-.work-item:nth-child(4),
-.work-item:nth-child(5),
-.work-item:nth-child(6) {
-  grid-column: span 4;
 }
 
 .work-item::before {
@@ -745,10 +743,6 @@ a {
   object-fit: cover;
   background: var(--white);
   transition: transform 480ms ease;
-}
-
-.work-item:nth-child(3n) img {
-  aspect-ratio: 2.35 / 1;
 }
 
 .work-item:hover img {
@@ -790,6 +784,20 @@ a {
   font-size: 1rem;
   color: var(--muted);
   line-height: 1.5;
+}
+
+.selected-work-grid .work-item:nth-child(3) {
+  grid-column: span 12;
+}
+
+.selected-work-grid .work-item:nth-child(4),
+.selected-work-grid .work-item:nth-child(5),
+.selected-work-grid .work-item:nth-child(6) {
+  grid-column: span 4;
+}
+
+.selected-work-grid .work-item:nth-child(3) img {
+  aspect-ratio: 2.35 / 1;
 }
 
 .dark .work-item {
@@ -986,6 +994,14 @@ a {
   transition: filter 240ms ease;
 }
 
+.logo-cloud div img.logo-wide {
+  max-height: 92px;
+}
+
+.logo-cloud div img.logo-tall {
+  max-height: 112px;
+}
+
 .logo-cloud div:hover img {
   filter: grayscale(0) opacity(1);
 }
@@ -1102,6 +1118,7 @@ a {
 
 .page-hero {
   padding: 84px 0 58px;
+  overflow: hidden;
   background:
     radial-gradient(circle at 85% 20%, rgba(201, 42, 47, 0.14), transparent 22rem),
     linear-gradient(var(--line) 1px, transparent 1px),
@@ -1187,10 +1204,6 @@ a {
 
 .red .person p {
   color: var(--muted);
-}
-
-.board-grid {
-  grid-template-columns: repeat(2, 1fr);
 }
 
 .team-grid {
@@ -1495,17 +1508,6 @@ a {
   border-top: 0;
 }
 
-.footer-logo {
-  display: inline-flex;
-  width: 162px;
-  margin-bottom: 46px;
-}
-
-.footer-logo img {
-  width: 100%;
-  height: auto;
-}
-
 .footer-grid {
   display: grid;
   grid-template-columns: 1.35fr 1.25fr 0.85fr 1fr;
@@ -1638,14 +1640,15 @@ a {
   }
 
   .work-item,
-  .work-item:nth-child(3n),
-  .work-item:nth-child(4),
-  .work-item:nth-child(5),
-  .work-item:nth-child(6) {
+  .work-grid .work-item:last-child:nth-child(odd),
+  .selected-work-grid .work-item:nth-child(3),
+  .selected-work-grid .work-item:nth-child(4),
+  .selected-work-grid .work-item:nth-child(5),
+  .selected-work-grid .work-item:nth-child(6) {
     grid-column: span 12;
   }
 
-  .work-item:nth-child(3n) img {
+  .selected-work-grid .work-item:nth-child(3) img {
     aspect-ratio: 1.22 / 1;
   }
 
@@ -1672,6 +1675,21 @@ a {
 
   .section-action {
     justify-content: flex-start;
+  }
+
+  .sample-strip {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .sample-strip img,
+  .sample-strip img:nth-child(1),
+  .sample-strip img:nth-child(2),
+  .sample-strip img:nth-child(3),
+  .sample-strip img:nth-child(4),
+  .sample-strip img:nth-child(n + 5) {
+    grid-column: span 1;
+    min-height: 220px;
+    aspect-ratio: 1.18 / 1;
   }
 }
 
@@ -1719,6 +1737,22 @@ a {
   .sample-grid,
   .proof-list,
   .thought-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .service-row,
+  .thought-row {
+    grid-template-columns: 42px 1fr 28px;
+    gap: 12px;
+  }
+
+  .service-row strong,
+  .thought-row strong {
+    font-size: clamp(1.35rem, 8vw, 2.3rem);
+    overflow-wrap: anywhere;
+  }
+
+  .sample-strip {
     grid-template-columns: 1fr;
   }
 
@@ -1968,7 +2002,7 @@ a {
 .case-stats strong {
   display: block;
   margin: 34px 0 14px;
-  font-family: var(--display);
+  font-family: var(--font-display);
   font-size: clamp(2.35rem, 4.4vw, 5.2rem);
   font-weight: 400;
   line-height: 0.92;

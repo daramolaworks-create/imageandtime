@@ -1386,6 +1386,11 @@ select:focus-visible {
   background: var(--line);
 }
 
+.sample-grid-two {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  max-width: 1040px;
+}
+
 .sample-card {
   display: grid;
   grid-template-rows: auto 1fr;
